@@ -6,8 +6,16 @@
     <title>Unity WebGL Player | CollisionLesson</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <style>
+    #webgl-container{
+      position: relative;
+      width:800px;
+      margin:0 auto;
+    }
+    </style>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/irairabou.json", {onProgress: UnityProgress});
     </script>
@@ -21,7 +29,7 @@
       <li>左右矢印キー左右移動</li>
     </ul>
   </div>
-
+<div id="webgl-container">
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
@@ -30,5 +38,6 @@
         <div class="title">CollisionLesson</div>
       </div>
     </div>
+  </div>
   </body>
 </html>
